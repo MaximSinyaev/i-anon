@@ -1,0 +1,71 @@
+/* Увеличиваем ширину контента для лучшей читаемости */
+article.center {
+    max-width: 80rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Увеличиваем ширину текста внутри статьи */
+.nested-copy-line-height {
+    max-width: none !important;
+    text-align: left !important;
+}
+
+/* Для главной страницы */
+.measure-wide {
+    max-width: 80rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left !important;
+}
+
+/* Убираем ограничение ширины для колонок */
+.w-two-thirds-l {
+    width: 100% !important;
+}
+
+.w-100-l {
+    width: 100% !important;
+}
+
+/* Выравнивание заголовков */
+h1 {
+    text-align: center !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: left !important;
+}
+
+/* Размер логотипа в навигации */
+nav img {
+    max-width: 150px !important;
+    max-height: 60px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin-right: 2rem !important;
+}
+
+/* Добавляем отступ для навигации чтобы логотип лучше смотрелся */
+nav .flex-l {
+    align-items: center !important;
+}
+
+/* Увеличиваем padding навигации для лучшего вида */
+nav {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Позиционирование фонового изображения только на главной странице */
+.home .page-header {
+    background-position: center center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    min-height: 300px !important;
+}

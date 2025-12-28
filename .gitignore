@@ -1,0 +1,28 @@
+# Hugo default output directory
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Hugo cache
+/hugo_cache/
+/.hugo_build.lock
+# Temporary old site files
+temp_old_site/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python

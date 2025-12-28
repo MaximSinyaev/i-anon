@@ -1,0 +1,98 @@
+baseURL = 'https://ianon-kz.github.io/'
+languageCode = 'ru-ru'
+title = 'И-Анон Казахстан'
+theme = 'ananke'
+
+[params]
+  description = 'Объединение И-Анон - программа восстановления для родственников и друзей людей с компульсивной игровой зависимостью'
+  favicon = 'favicon.ico'
+  site_logo = 'images/logo.png'
+  custom_css = ['custom.css']
+  
+[languages]
+  [languages.ru]
+    languageName = 'Русский'
+    weight = 1
+
+[[menus.main]]
+  name = 'Главная страница'
+  url = '/'
+  weight = 1
+
+[[menus.main]]
+  name = 'Что такое компульсивная игромания?'
+  url = '/what-is-gambling/'
+  weight = 2
+
+[[menus.main]]
+  name = 'И-анон может помочь'
+  url = '/how-ianon-helps/'
+  weight = 3
+
+[[menus.main]]
+  name = 'Подходит ли мне И-анон?'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/is-it-for-me/'
+  weight = 1
+
+[[menus.main]]
+  name = 'Может ли ваш ребенок быть компульсивным игроком?'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/can-your-child/'
+  weight = 2
+
+[[menus.main]]
+  name = 'Как на нас влияет компульсивная игровая зависимость близких'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/how-it-affects-us/'
+  weight = 3
+
+[[menus.main]]
+  name = 'Вы росли рядом с компульсивным игроком'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/grew-up-near/'
+  weight = 4
+
+[[menus.main]]
+  name = 'Часто задаваемые вопросы'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/faq/'
+  weight = 5
+
+[[menus.main]]
+  name = 'Десять хороших слов о сообществе И-Анон'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/ten-good-words/'
+  weight = 6
+
+[[menus.main]]
+  name = 'Предложения И-анон'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/ianon-suggestions/'
+  weight = 7
+
+[[menus.main]]
+  name = 'Краткий обзор инструментов И-анон'
+  parent = 'И-анон может помочь'
+  url = '/how-ianon-helps/brief-overview/'
+  weight = 8
+
+[[menus.main]]
+  name = 'Двенадцать Шагов И-анон'
+  url = '/twelve-steps/'
+  weight = 4
+
+[[menus.main]]
+  name = 'Двенадцать Шагов к Единству И-анон'
+  url = '/twelve-traditions/'
+  weight = 5
+
+[[menus.main]]
+  name = 'Литература И-анон'
+  url = '/literature/'
+  weight = 6
+
+[[menus.main]]
+  name = 'Контакты И-анон в Казахстане'
+  url = '/contacts/'
+  weight = 7
