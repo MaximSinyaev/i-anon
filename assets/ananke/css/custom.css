@@ -63,9 +63,14 @@ nav {
 }
 
 /* Позиционирование фонового изображения только на главной странице */
-.home .page-header {
-    background-position: center center !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    min-height: 300px !important;
+/* Убираем !important и увеличиваем специфичность селектора */
+html body header.cover.bg-top[style*="background-image"] {
+    background-position: center -150px;
+    background-size: 65% !important;
+}
+
+/* Дополнительный селектор на случай других вариантов */
+html body:not([class*="single"]) header.cover[style*="background-image"] {
+    background-position: center -150px;
+    background-size: 65% !important;
 }
