@@ -1,59 +1,52 @@
 <nav class="pv3 ph3 ph4-ns" role="navigation">
-    <div class="flex-l center items-center justify-between">
-        <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
-            {{ with .Site.Params.site_logo }}
-            <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
-            {{ else }}
-            {{ .Site.Title }}
-            {{ end }}
-        </a>
-        <div class="flex-l items-center">
-            {{ partials.Include "i18nlist.html" . }}
-            {{ if .Site.Menus.main }}
-            <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection " rtl") "pr0 ml3" "pl0 mr3"
-                }}">
-                {{ range .Site.Menus.main }}
-                {{ if not .Parent }}
-                <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "
-                    rtl") "pl3" "pr3" }} {{ if .HasChildren }}relative dropdown{{ end }}">
-                    <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate " pageTitle"
-                        . }}">
-                        {{ .Name }}
-                    </a>
-
-                    {{ if .HasChildren }}
-                    <ul class="dropdown-menu absolute bg-black white-90 list pa0 ma0 mt2 dn" style="min-width: 250px;">
-                        {{ range .Children }}
-                        <li class="pa2 hover-bg-dark-gray">
-                            <a class="white-90 no-underline db" href="{{ .URL }}" title="{{ lang.Translate " pageTitle"
-                                . }}">
-                                {{ .Name }}
-                            </a>
-                        </li>
-                        {{ end }}
-                    </ul>
+  <div class="flex-l center items-center justify-between">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+    <div class="flex-l items-center">
+      {{ partials.Include "i18nlist.html" . }}
+      {{ if .Site.Menus.main }}
+        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+          {{ range .Site.Menus.main }}
+            {{ if not .Parent }}
+              <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }} {{ if .HasChildren }}relative dropdown{{ end }}">
+                <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+                  {{ .Name }}
+                </a>
+                {{ if .HasChildren }}
+                  <ul class="dropdown-menu absolute bg-black white-90 list pa0 ma0 mt2 dn" style="min-width: 250px;">
+                    {{ range .Children }}
+                      <li class="pa2 hover-bg-dark-gray">
+                        <a class="white-90 no-underline db" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+                          {{ .Name }}
+                        </a>
+                      </li>
                     {{ end }}
-                </li>
+                  </ul>
                 {{ end }}
-                {{ end }}
-            </ul>
+              </li>
             {{ end }}
-            {{ partials.IncludeCached "social/follow.html" . }}
-        </div>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partials.IncludeCached "social/follow.html" . }}
     </div>
+  </div>
 </nav>
 
 <style>
-    .dropdown:hover .dropdown-menu {
-        display: block !important;
-    }
-
-    .dropdown-menu {
-        z-index: 1000;
-        border-top: 2px solid #555;
-    }
-
-    .dropdown-menu li:hover {
-        background-color: #333;
-    }
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+.dropdown-menu {
+  z-index: 1000;
+  border-top: 2px solid #555;
+}
+.dropdown-menu li:hover {
+  background-color: #333;
+}
 </style>
