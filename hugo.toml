@@ -1,6 +1,6 @@
 baseURL = 'https://ianon-kz.github.io/'
 languageCode = 'ru-ru'
-title = 'И-Анон Казахстан'
+# title = 'И-Анон Казахстан'
 theme = 'ananke'
 
 [params]

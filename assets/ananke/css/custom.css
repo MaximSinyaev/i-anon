@@ -1,8 +1,46 @@
+/* Скрываем header на главной странице */
+body.home header.cover {
+    display: none !important;
+}
+
+/* Уменьшаем высоту header на главной странице */
+body.home header.cover {
+    min-height: 50vh !important;
+}
+
+/* Стили для логотипа на главной странице */
+.home-logo {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 2rem auto 3rem;
+    text-align: center;
+}
+
+.home-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Увеличиваем ширину контента для лучшей читаемости */
 article.center {
     max-width: 80rem !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+/* Стили для логотипа на главной странице */
+.home-logo {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 2rem auto 3rem;
+    text-align: center;
+}
+
+.home-logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Увеличиваем ширину текста внутри статьи */
@@ -65,12 +103,40 @@ nav {
 /* Позиционирование фонового изображения только на главной странице */
 /* Убираем !important и увеличиваем специфичность селектора */
 html body header.cover.bg-top[style*="background-image"] {
-    background-position: center -150px;
-    background-size: 65% !important;
+    background-position: center center;
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
 }
 
 /* Дополнительный селектор на случай других вариантов */
 html body:not([class*="single"]) header.cover[style*="background-image"] {
-    background-position: center -150px;
-    background-size: 65% !important;
+    background-position: center center;
+    background-size: auto 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Адаптивные стили для десктопа */
+@media screen and (min-width: 60em) {
+    html body header.cover.bg-top[style*="background-image"] {
+        background-position: center center;
+        background-size: auto 100% !important;
+    }
+    
+    html body:not([class*="single"]) header.cover[style*="background-image"] {
+        background-position: center center;
+        background-size: auto 100% !important;
+    }
+}
+
+/* Адаптивные стили для планшетов */
+@media screen and (min-width: 30em) and (max-width: 60em) {
+    html body header.cover.bg-top[style*="background-image"] {
+        background-position: center top;
+        background-size: 80% !important;
+    }
+    
+    html body:not([class*="single"]) header.cover[style*="background-image"] {
+        background-position: center top;
+        background-size: 80% !important;
+    }
 }
