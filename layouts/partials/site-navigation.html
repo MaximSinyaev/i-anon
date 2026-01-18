@@ -18,7 +18,7 @@
                   {{ .Name }}
                 </a>
                 {{ if .HasChildren }}
-                  <ul class="dropdown-menu absolute bg-black white-90 list pa0 ma0 mt2 dn" style="min-width: 250px;">
+                  <ul class="dropdown-menu absolute bg-black white-90 list pa0 ma0 dn" style="min-width: 250px;">
                     {{ range .Children }}
                       <li class="pa2 hover-bg-dark-gray">
                         <a class="white-90 no-underline db" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
@@ -39,12 +39,17 @@
 </nav>
 
 <style>
+.dropdown {
+  position: relative;
+}
 .dropdown:hover .dropdown-menu {
   display: block !important;
 }
 .dropdown-menu {
   z-index: 1000;
   border-top: 2px solid #555;
+  top: 100%;
+  left: 0;
 }
 .dropdown-menu li:hover {
   background-color: #333;
