@@ -30,74 +30,74 @@ theme = 'ananke'
   weight = 2
 
 [[menus.main]]
-  name = 'И-анон может помочь'
+  name = 'И-Анон может помочь'
   url = '/how-ianon-helps/'
   weight = 3
 
 [[menus.main]]
-  name = 'Подходит ли мне И-анон?'
-  parent = 'И-анон может помочь'
+  name = 'Подходит ли мне И-Анон?'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/is-it-for-me/'
   weight = 1
 
 [[menus.main]]
   name = 'Может ли ваш ребенок быть компульсивным игроком?'
-  parent = 'И-анон может помочь'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/can-your-child/'
   weight = 2
 
 [[menus.main]]
   name = 'Как на нас влияет компульсивная игровая зависимость близких'
-  parent = 'И-анон может помочь'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/how-it-affects-us/'
   weight = 3
 
 [[menus.main]]
   name = 'Вы росли рядом с компульсивным игроком'
-  parent = 'И-анон может помочь'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/grew-up-near/'
   weight = 4
 
 [[menus.main]]
   name = 'Часто задаваемые вопросы'
-  parent = 'И-анон может помочь'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/faq/'
   weight = 5
 
 [[menus.main]]
   name = 'Десять хороших слов о сообществе И-Анон'
-  parent = 'И-анон может помочь'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/ten-good-words/'
   weight = 6
 
 [[menus.main]]
-  name = 'Предложения И-анон'
-  parent = 'И-анон может помочь'
+  name = 'Предложения И-Анон'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/ianon-suggestions/'
   weight = 7
 
 [[menus.main]]
-  name = 'Краткий обзор инструментов И-анон'
-  parent = 'И-анон может помочь'
+  name = 'Краткий обзор инструментов И-Анон'
+  parent = 'И-Анон может помочь'
   url = '/how-ianon-helps/brief-overview/'
   weight = 8
 
 [[menus.main]]
-  name = 'Двенадцать Шагов И-анон'
+  name = 'Двенадцать Шагов И-Анон'
   url = '/twelve-steps/'
   weight = 4
 
 [[menus.main]]
-  name = 'Двенадцать Шагов к Единству И-анон'
+  name = 'Двенадцать Шагов к Единству И-Анон'
   url = '/twelve-traditions/'
   weight = 5
 
 [[menus.main]]
-  name = 'Литература И-анон'
+  name = 'Литература И-Анон'
   url = '/literature/'
   weight = 6
 
 [[menus.main]]
-  name = 'Контакты И-анон в Казахстане'
+  name = 'Контакты И-Анон в Казахстане'
   url = '/contacts/'
   weight = 7

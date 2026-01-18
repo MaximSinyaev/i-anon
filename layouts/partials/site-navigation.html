@@ -36,6 +36,12 @@
       {{ partials.IncludeCached "social/follow.html" . }}
     </div>
   </div>
+  <div class="hotline-phone">
+    Телефон горячей линии в РК:
+    <a href="tel:+77001234567" class="white-90 no-underline hover-white">
+      📞 +7 (700) 123-45-67
+    </a>
+  </div>
 </nav>
 
 <style>
@@ -53,5 +59,28 @@
 }
 .dropdown-menu li:hover {
   background-color: #333;
+}
+.hotline-phone {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: right;
+  z-index: 100;
+}
+.hotline-phone a {
+  display: inline-block;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+@media screen and (max-width: 60em) {
+  .hotline-phone {
+    position: static;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
 }
 </style>

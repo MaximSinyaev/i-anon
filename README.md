@@ -34,19 +34,19 @@ hugo server -D
 
 - `content/_index.md` - главная страница
 - `content/what-is-gambling.md` - Что такое компульсивная игромания?
-- `content/how-ianon-helps/` - раздел "И-анон может помочь" со всеми подстраницами
-  - `is-it-for-me.md` - Подходит ли мне И-анон?
+- `content/how-ianon-helps/` - раздел "И-Анон может помочь" со всеми подстраницами
+  - `is-it-for-me.md` - Подходит ли мне И-Анон?
   - `can-your-child.md` - Может ли ваш ребенок быть компульсивным игроком?
   - `how-it-affects-us.md` - Как на нас влияет компульсивная игровая зависимость близких
   - `grew-up-near.md` - Вы росли рядом с компульсивным игроком
   - `faq.md` - Часто задаваемые вопросы
   - `ten-good-words.md` - Десять хороших слов о сообществе И-Анон
-  - `ianon-suggestions.md` - Предложения И-анон
-  - `brief-overview.md` - Краткий обзор инструментов И-анон
-- `content/twelve-steps.md` - Двенадцать Шагов И-анон
-- `content/twelve-traditions.md` - Двенадцать Шагов к Единству И-анон
-- `content/literature.md` - Литература И-анон
-- `content/contacts.md` - Контакты И-анон в Казахстане
+  - `ianon-suggestions.md` - Предложения И-Анон
+  - `brief-overview.md` - Краткий обзор инструментов И-Анон
+- `content/twelve-steps.md` - Двенадцать Шагов И-Анон
+- `content/twelve-traditions.md` - Двенадцать Шагов к Единству И-Анон
+- `content/literature.md` - Литература И-Анон
+- `content/contacts.md` - Контакты И-Анон в Казахстане
 
 Для редактирования откройте нужный `.md` файл и измените содержимое между `---` разделителями.
 
