@@ -36,8 +36,8 @@
       {{ partials.IncludeCached "social/follow.html" . }}
     </div>
   </div>
-  <div class="hotline-phone">
-    Телефон горячей линии в РК:
+  <div class="hotline-phone w-100">
+    <span class="hotline-text">Телефон горячей линии в РК:</span>
     <a href="tel:+77001234567" class="white-90 no-underline hover-white">
       📞 +7 (700) 123-45-67
     </a>
@@ -61,13 +61,16 @@
   background-color: #333;
 }
 .hotline-phone {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.875rem;
   font-weight: 500;
   text-align: right;
-  z-index: 100;
+}
+.hotline-text {
+  margin-right: 0.5rem;
 }
 .hotline-phone a {
   display: inline-block;
@@ -75,12 +78,25 @@
   white-space: nowrap;
 }
 @media screen and (max-width: 60em) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  nav ul li {
+    display: block !important;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0.5rem;
+  }
   .hotline-phone {
-    position: static;
     text-align: center;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .hotline-text {
+    display: block;
+    margin-bottom: 0.25rem;
   }
 }
 </style>

@@ -75,12 +75,6 @@ nav .flex-l {
     align-items: center !important;
 }
 
-/* Делаем nav относительно позиционированным для размещения телефона */
-nav {
-    position: relative !important;
-    padding-bottom: 2.5rem !important;
-}
-
 
 
 /* Позиционирование фонового изображения только на главной странице */
