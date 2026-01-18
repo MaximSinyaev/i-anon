@@ -3,6 +3,11 @@ languageCode = 'ru-ru'
 # title = 'И-Анон Казахстан'
 theme = 'ananke'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   description = 'Объединение И-Анон - программа восстановления для родственников и друзей людей с компульсивной игровой зависимостью'
   favicon = 'favicon.ico'

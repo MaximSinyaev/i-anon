@@ -1,46 +1,26 @@
-/* Скрываем header на главной странице */
-body.home header.cover {
-    display: none !important;
-}
-
-/* Уменьшаем высоту header на главной странице */
-body.home header.cover {
-    min-height: 50vh !important;
-}
-
 /* Стили для логотипа на главной странице */
 .home-logo {
     display: block;
-    max-width: 500px;
-    width: 100%;
     margin: 2rem auto 3rem;
     text-align: center;
+    width: 100%;
 }
 
 .home-logo img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
+    max-width: 500px;
     height: auto;
+    margin: 0 auto;
 }
+
+/* Стили хедера применяются глобально ниже */
 
 /* Увеличиваем ширину контента для лучшей читаемости */
 article.center {
     max-width: 80rem !important;
     margin-left: auto !important;
     margin-right: auto !important;
-}
-
-/* Стили для логотипа на главной странице */
-.home-logo {
-    display: block;
-    max-width: 500px;
-    width: 100%;
-    margin: 2rem auto 3rem;
-    text-align: center;
-}
-
-.home-logo img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Увеличиваем ширину текста внутри статьи */
@@ -94,11 +74,7 @@ nav .flex-l {
     align-items: center !important;
 }
 
-/* Увеличиваем padding навигации для лучшего вида */
-nav {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-}
+
 
 /* Позиционирование фонового изображения только на главной странице */
 /* Убираем !important и увеличиваем специфичность селектора */
@@ -129,6 +105,7 @@ html body:not([class*="single"]) header.cover[style*="background-image"] {
 }
 
 /* Адаптивные стили для планшетов */
+
 @media screen and (min-width: 30em) and (max-width: 60em) {
     html body header.cover.bg-top[style*="background-image"] {
         background-position: center top;
@@ -139,4 +116,56 @@ html body:not([class*="single"]) header.cover[style*="background-image"] {
         background-position: center top;
         background-size: 80% !important;
     }
+}
+
+/* Уменьшаем высоту хедера на всех страницах и меняем цвет */
+body header,
+body header.cover,
+body.home header,
+header .bg-black,
+header .bg-black-60,
+header div[class*="bg-black"] {
+    min-height: auto !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    background-color: #4A90E2 !important;
+}
+
+body header > div,
+body.home header > div {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    background-color: #4A90E2 !important;
+}
+
+body.home header .tc-l {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+/* Меняем цвет текста в хедере на белый для лучшей читаемости */
+header a,
+header nav a,
+header .site-title a,
+header h1,
+header h2 {
+    color: white !important;
+}
+
+header a:hover,
+header nav a:hover,
+header .site-title a:hover {
+    color: #e8f4ff !important;
+}
+
+/* Увеличиваем расстояние между ссылками в меню */
+nav a {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    margin-top: 0.25rem !important;
+}
+
+nav ul li {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
 }
