@@ -8,9 +8,10 @@
 
 .home-logo img {
     display: block;
-    width: 100%;
-    max-width: 500px;
+    /* width: 100%; */
+    /* max-width: 500px; */
     height: auto;
+    max-height: 500px;
     margin: 0 auto;
 }
 
