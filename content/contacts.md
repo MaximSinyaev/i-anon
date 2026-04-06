@@ -4,29 +4,27 @@ date: 2025-12-27
 draft: false
 ---
 
-Контакты И-Анон в Республике Казахстан
+## Контакты И-Анон в Республике Казахстан
 
-Контакты в Республике Казахстан
+📞 **Телефон:** [+7 702 725 73 39](tel:+77027257339)
 
-Телефон +7 702 725 73 39
+📍 **Адрес:** Муканова 222
 
-Адрес: Муканова 222
+🗓 **Встречи:** каждую субботу в **8:30**
 
-Встречи: каждую субботу в 20:30
+✉️ **Email:** [gamanonkz@gmail.com](mailto:gamanonkz@gmail.com)
 
-gamanonkz@gmail.com
+---
 
-Офис всемирного обслуживания И-Анон:
+## Офис всемирного обслуживания И-Анон
 
-GAM-ANON® INTERNATIONAL SERVICE OFFICE
+**GAM-ANON® INTERNATIONAL SERVICE OFFICE**
 
-PO BOX 307
+PO BOX 307, Massapequa Park, NY 11762, USA
 
-Massapequa Park, NY 11762
+📞 [718-352-1671](tel:+17183521671)
 
-718-352-1671
+🌐 [www.gam-anon.org](https://www.gam-anon.org)
 
-www.gam-anon.org
-
-gamanonoffice@gam-anon.org
+✉️ [gamanonoffice@gam-anon.org](mailto:gamanonoffice@gam-anon.org)
 
