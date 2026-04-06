@@ -51,6 +51,9 @@
 .dropdown:hover .dropdown-menu {
   display: block !important;
 }
+.dropdown.active .dropdown-menu {
+  display: block !important;
+}
 .dropdown-menu {
   z-index: 1000;
   border-top: 2px solid #555;
@@ -91,6 +94,17 @@
     padding-right: 0 !important;
     margin-bottom: 0.5rem;
   }
+  .dropdown-menu {
+    position: static !important;
+    border-top: none;
+    background-color: transparent !important;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+  .dropdown-menu li {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 0.25rem;
+  }
   .hotline-phone {
     text-align: center;
   }
@@ -100,3 +114,42 @@
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Обработка кликов для мобильных устройств
+  const dropdowns = document.querySelectorAll('.dropdown');
+  
+  dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('a');
+    
+    link.addEventListener('click', function(e) {
+      // Только для мобильных устройств (экраны меньше 60em)
+      if (window.innerWidth <= 960) {
+        e.preventDefault();
+        
+        // Закрываем все другие выпадающие меню
+        dropdowns.forEach(other => {
+          if (other !== dropdown) {
+            other.classList.remove('active');
+          }
+        });
+        
+        // Переключаем текущее меню
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+  
+  // Закрываем меню при клике вне его
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 960) {
+      if (!e.target.closest('.dropdown')) {
+        dropdowns.forEach(dropdown => {
+          dropdown.classList.remove('active');
+        });
+      }
+    }
+  });
+});
+</script>

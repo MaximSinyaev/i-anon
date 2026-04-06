@@ -161,12 +161,12 @@ header .site-title a:hover {
 
 /* Увеличиваем расстояние между ссылками в меню */
 nav a {
-    margin-left: 0.5rem !important;
-    margin-right: 0.5rem !important;
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
     margin-top: 0.25rem !important;
 }
 
 nav ul li {
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
 }
