@@ -1,103 +1,105 @@
-baseURL = 'https://ianon-kz.github.io/'
+baseURL = 'https://gam-anon.kz/'
 languageCode = 'ru-ru'
 # title = 'И-Анон Казахстан'
 theme = 'ananke'
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
 
 [params]
-  description = 'Объединение И-Анон - программа восстановления для родственников и друзей людей с компульсивной игровой зависимостью'
-  favicon = 'favicon.ico'
-  site_logo = 'images/logo.png'
-  custom_css = ['custom.css']
-  
+    description = 'Объединение И-Анон - программа восстановления для родственников и друзей людей с компульсивной игровой зависимостью'
+    favicon = 'favicon.ico'
+    site_logo = 'images/logo.png'
+    custom_css = [
+        'custom.css',
+    ]
+
 [languages]
-  [languages.ru]
-    languageName = 'Русский'
+    [languages.ru]
+        languageName = 'Русский'
+        weight = 1
+
+[[menus.main]]
+    name = 'Главная страница'
+    url = '/'
     weight = 1
 
 [[menus.main]]
-  name = 'Главная страница'
-  url = '/'
-  weight = 1
+    name = 'Что такое компульсивная игромания?'
+    url = '/what-is-gambling/'
+    weight = 2
 
 [[menus.main]]
-  name = 'Что такое компульсивная игромания?'
-  url = '/what-is-gambling/'
-  weight = 2
+    name = 'И-Анон может помочь'
+    url = '/how-ianon-helps/'
+    weight = 3
 
 [[menus.main]]
-  name = 'И-Анон может помочь'
-  url = '/how-ianon-helps/'
-  weight = 3
+    name = 'Подходит ли мне И-Анон?'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/is-it-for-me/'
+    weight = 1
 
 [[menus.main]]
-  name = 'Подходит ли мне И-Анон?'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/is-it-for-me/'
-  weight = 1
+    name = 'Может ли ваш ребенок быть компульсивным игроком?'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/can-your-child/'
+    weight = 2
 
 [[menus.main]]
-  name = 'Может ли ваш ребенок быть компульсивным игроком?'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/can-your-child/'
-  weight = 2
+    name = 'Как на нас влияет компульсивная игровая зависимость близких'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/how-it-affects-us/'
+    weight = 3
 
 [[menus.main]]
-  name = 'Как на нас влияет компульсивная игровая зависимость близких'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/how-it-affects-us/'
-  weight = 3
+    name = 'Вы росли рядом с компульсивным игроком'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/grew-up-near/'
+    weight = 4
 
 [[menus.main]]
-  name = 'Вы росли рядом с компульсивным игроком'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/grew-up-near/'
-  weight = 4
+    name = 'Часто задаваемые вопросы'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/faq/'
+    weight = 5
 
 [[menus.main]]
-  name = 'Часто задаваемые вопросы'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/faq/'
-  weight = 5
+    name = 'Десять хороших слов о сообществе И-Анон'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/ten-good-words/'
+    weight = 6
 
 [[menus.main]]
-  name = 'Десять хороших слов о сообществе И-Анон'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/ten-good-words/'
-  weight = 6
+    name = 'Предложения И-Анон'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/ianon-suggestions/'
+    weight = 7
 
 [[menus.main]]
-  name = 'Предложения И-Анон'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/ianon-suggestions/'
-  weight = 7
+    name = 'Краткий обзор инструментов И-Анон'
+    parent = 'И-Анон может помочь'
+    url = '/how-ianon-helps/brief-overview/'
+    weight = 8
 
 [[menus.main]]
-  name = 'Краткий обзор инструментов И-Анон'
-  parent = 'И-Анон может помочь'
-  url = '/how-ianon-helps/brief-overview/'
-  weight = 8
+    name = 'Двенадцать Шагов И-Анон'
+    url = '/twelve-steps/'
+    weight = 4
 
 [[menus.main]]
-  name = 'Двенадцать Шагов И-Анон'
-  url = '/twelve-steps/'
-  weight = 4
+    name = 'Двенадцать Шагов к Единству И-Анон'
+    url = '/twelve-traditions/'
+    weight = 5
 
 [[menus.main]]
-  name = 'Двенадцать Шагов к Единству И-Анон'
-  url = '/twelve-traditions/'
-  weight = 5
+    name = 'Литература И-Анон'
+    url = '/literature/'
+    weight = 6
 
 [[menus.main]]
-  name = 'Литература И-Анон'
-  url = '/literature/'
-  weight = 6
-
-[[menus.main]]
-  name = 'Контакты И-Анон в Казахстане'
-  url = '/contacts/'
-  weight = 7
+    name = 'Контакты И-Анон в Казахстане'
+    url = '/contacts/'
+    weight = 7
