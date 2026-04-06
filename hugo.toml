@@ -1,6 +1,7 @@
 baseURL = 'https://gam-anon.kz/'
+relativeURLs = true
 languageCode = 'ru-ru'
-# title = 'И-Анон Казахстан'
+title = "И-Анон Казахстан — Помощь родственникам и близким лудоманов"
 theme = 'ananke'
 
 [markup]
@@ -9,7 +10,7 @@ theme = 'ananke'
             unsafe = true
 
 [params]
-    description = 'Объединение И-Анон - программа восстановления для родственников и друзей людей с компульсивной игровой зависимостью'
+    description = "Бесплатные группы поддержки И-Анон в Казахстане для семей, жен и друзей компульсивных игроков. Помощь родственникам лудоманов и преодоление созависимости."
     favicon = 'favicon.ico'
     site_logo = 'images/logo.png'
     custom_css = [
