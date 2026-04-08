@@ -23,7 +23,7 @@ theme = 'ananke'
         weight = 1
 
 [[menus.main]]
-    name = 'Главная страница'
+    name = 'Главная'
     url = '/'
     weight = 1
 
