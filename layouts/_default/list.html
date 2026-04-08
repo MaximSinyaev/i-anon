@@ -1,0 +1,30 @@
+{{ define "header" }}
+  <header>
+    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
+      {{ partials.Include "site-navigation.html" . }}
+      {{ if and .Title (ne .Title "") }}
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          {{ .Title }}
+        </h1>
+      </div>
+      {{ end }}
+    </div>
+  </header>
+{{ end }}
+
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      {{ range .Paginator.Pages }}
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>
+    {{ partial "pagination.html" . -}}
+  </article>
+{{ end }}
