@@ -101,6 +101,6 @@ theme = 'ananke'
     weight = 6
 
 [[menus.main]]
-    name = 'Контакты И-Анон в Казахстане'
+    name = 'Контакты'
     url = '/contacts/'
     weight = 7
