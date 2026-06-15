@@ -3,6 +3,7 @@ relativeURLs = true
 languageCode = 'ru-ru'
 title = "И-Анон Казахстан — Помощь родственникам и близким лудоманов"
 theme = 'ananke'
+disableKinds = ['taxonomy', 'term']
 
 [markup]
     [markup.goldmark]
@@ -101,6 +102,11 @@ theme = 'ananke'
     weight = 6
 
 [[menus.main]]
+    name = 'Расписание встреч'
+    url = '/schedule/'
+    weight = 7
+
+[[menus.main]]
     name = 'Контакты'
     url = '/contacts/'
-    weight = 7
+    weight = 8
