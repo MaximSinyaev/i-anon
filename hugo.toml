@@ -97,6 +97,12 @@ disableKinds = ['taxonomy', 'term']
     weight = 5
 
 [[menus.main]]
+    name = 'Истории выздоровления'
+    parent = 'И-Анон может помочь'
+    url = '/recovery-stories/'
+    weight = 9
+
+[[menus.main]]
     name = 'Литература И-Анон'
     url = '/literature/'
     weight = 6

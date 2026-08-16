@@ -10,10 +10,13 @@ draft: false
 📞 **Телефон:** [+7 702 725 73 39](tel:+77027257339)
 
 📍 **Адрес:** Алматы, Муканова 222
+🗺️ **Как добраться:** [И-Анон Казахстан](https://2gis.kz/almaty/geo/70000001116240311) в 2Gis
 
 🗓 **Встречи:** каждую субботу в **8:30**
 
 ✉️ **Email:** [gamanonkz@gmail.com](mailto:gamanonkz@gmail.com)
+
+📱 **Instagram:** [@ianon_kz](https://www.instagram.com/ianon_kz)
 
 ---
 
